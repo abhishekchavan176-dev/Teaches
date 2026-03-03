@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dipali Laxman Khutwad | Educator Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #38bdf8;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 90px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+p {
+    color: var(--muted);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 44px;
+}
+
+.hero span {
+    color: var(--accent);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 26px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #334155;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #334155;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+@media(max-width:768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+    .nav-links {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <h3>Dipali</h3>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero container">
+    <div>
+        <h1>Hello, I'm <span>Dipali Khutwad</span></h1>
+        <p>Primary & Pre-Primary Educator with 4+ years of experience in curriculum delivery, 
+        classroom management, and student development. Passionate about building strong academic foundations and fostering inclusive learning environments.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about" class="container fade">
+    <h2>About Me</h2>
+    <p>
+    I am a dedicated educator with experience teaching in New Poona English Medium School and Vision International School. 
+    I specialize in foundational literacy, numeracy, and interactive teaching methods. 
+    My goal is to create structured, engaging, and student-focused classrooms that promote confidence and academic growth.
+    </p>
+</section>
+
+<section id="skills" class="container fade">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill">Lesson Planning</div>
+        <div class="skill">Curriculum Development</div>
+        <div class="skill">Classroom Management</div>
+        <div class="skill">Child Psychology</div>
+        <div class="skill">Mathematics Teaching</div>
+        <div class="skill">Student Assessment</div>
+        <div class="skill">Parent Communication</div>
+        <div class="skill">MS Office</div>
+        <div class="skill">Digital Teaching Tools</div>
+    </div>
+</section>
+
+<section id="projects" class="container fade">
+    <h2>Professional Experience</h2>
+    <div class="projects-grid">
+
+        <div class="card">
+            <h3>New Poona English Medium School</h3>
+            <p>Delivered structured lesson plans to 30+ students per class. 
+            Implemented interactive learning strategies to improve foundational literacy and numeracy skills.</p>
+            <p><strong>Focus Areas:</strong> Classroom Management, Student Development</p>
+        </div>
+
+        <div class="card">
+            <h3>Vision International School</h3>
+            <p>Designed subject-specific teaching modules and enhanced student engagement 
+            through activity-based learning and structured assessments.</p>
+            <p><strong>Focus Areas:</strong> Curriculum Planning, Academic Monitoring</p>
+        </div>
+
+        <div class="card">
+            <h3>Mathematics Specialization</h3>
+            <p>Pursuing advanced studies in Mathematics (M.Sc). 
+            Strong conceptual knowledge applied in primary-level math instruction.</p>
+            <p><strong>Focus Areas:</strong> Analytical Teaching, Problem-Solving Skills</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="container fade">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:dipaliras10@gmail.com">dipaliras10@gmail.com</a></p>
+    <p>Phone: 8552937421 / 9595899620</p>
+    <p>LinkedIn: <a href="#">Add Your LinkedIn Profile</a></p>
+    <p>GitHub: <a href="#">Add GitHub (Optional)</a></p>
+</section>
+
+<footer>
+    © 2026 Dipali Laxman Khutwad | Educator Portfolio
+</footer>
+
+<script>
+const faders = document.querySelectorAll('.fade');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+faders.forEach(section => {
+    observer.observe(section);
+});
+</script>
+
+</body>
+</html>
